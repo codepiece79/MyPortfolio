@@ -11,7 +11,7 @@ const Home = () => {
           I'm a Full-Stack Developer
         </h1>
         <div className="Main-Img">
-          <img src="src\assets\graphics.png" alt="Main Image" />
+          <img src=".\assets\graphics.png" alt="Main Image" />
         </div>
       </div>
     </section>
