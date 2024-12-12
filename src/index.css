@@ -1,68 +1,82 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+/* Resets */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+* {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+/* Home Component */
+#Home {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+    116.82deg,
+    #050513 6%,
+    #000010 12%,
+    #000010 24%,
+    #050513 29%,
+    #050317 39%,
+    #000418 47%,
+    #06051a 54%,
+    #07061b 61%,
+    #07061e 71%,
+    #07061d 97%,
+    #0b092c 100%
+  );
+}
+.hero {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0 5%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.Main-Img img {
+  height: 400px;
+  width: 400px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+#Home h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 3rem;
+  word-spacing: 0.5rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* NavBar Component */
+nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 25px 0;
 }
+
+nav ul {
+  display: inline-flex;
+  align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav ul a:hover {
+  color: #e7d5d5;
+}
+
+.line {
+  border: 2px solid #ffffff;
+}
+
+
+/* background: url(25001216_7040861 (3).png); *\ */ 
