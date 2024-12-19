@@ -24,11 +24,6 @@ body {
   background-attachment: fixed;
 }
 
-.Main-Img img {
-  height: 400px;
-  width: 400px;
-}
-
 .circle {
   background: radial-gradient(
     50% 50% at 50% 50%,
